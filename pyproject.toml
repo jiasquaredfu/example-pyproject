@@ -4,7 +4,7 @@ readme = "README.md"
 description = "Wondrous test project to attempt packaging"
 version = "0.0.1"
 license = "MIT"
-license-files = "LICENSE.txt"
+license-files = ["LICENSE.txt"]
 authors = [
 	{name = "jiajia", email = "jjnaturalist@gmail.com"}
 ]
@@ -17,11 +17,9 @@ dependencies = [
 	"pandas",
 ]
 keywords = ["packaging", "practice", "jia squared",]
-Homepage = "https://example-pyproject.jiasqrd.com"
-Source = "https://github.com/jiasquaredfu/example-pyproject"
-
 [build-system]
-build-backend = "hatchling.build"
+build-backend = "setuptools.build_meta"
 requires = [
-	"hatchling",
+        "setuptools",
 ]
+   
